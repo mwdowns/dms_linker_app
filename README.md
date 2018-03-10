@@ -5,7 +5,6 @@ This is a Node app for linking a newly created WPT1 client with an already exist
 It will ask a few questions getting the information it needs to make the updates and then run the queries and update statements.
 
 Info it needs:
-* the password to the DB
 * the TWAN of the client in WPT1 (all caps)
 * The company ID from the client in the WPT2 tool
 * The business unit ID from the client in the WPT2 tool
