@@ -1,0 +1,15 @@
+{
+  "name": "dms_linker_app",
+  "version": "1.0.0",
+  "description": "app for updating dms and wpt1",
+  "main": "dms_linker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "matthew downs",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "promise-mysql": "^3.2.1"
+  }
+}
