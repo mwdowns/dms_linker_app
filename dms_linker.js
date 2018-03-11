@@ -24,28 +24,31 @@ rl.question('What is the TWAN you are looking for? ', (twan) => {
 					user: process.env.DB_USER,
 					password: process.env.DB_PASS,
 					database: process.env.DB_NAME,
-				}).then(function(conn) {
+				}).then((conn) => {
 					connection = conn;
 					initalquery[1] = twan;
 					return connection.query(initalquery.join(''));
-				}).then(function(data) {
+				}).then((data) => {
 					buupdate[1] = buID;
 					buupdate[3]= data[0].impID;
 					companyupdate[3] = data[0].clientID;
 					sitegroupupdate[3] = data[0].tagID;
 					console.log(buupdate);
 					return connection.query(buupdate.join(''));
-				}).then(function(data) {
+				}).then((data) => {
 					companyupdate[1] = companyID;
 					console.log(companyupdate);
 					return connection.query(companyupdate.join(''));
-				}).then(function(data) {
+				}).then((data) => {
 					sitegroupupdate[1] = sitegrID;
 					console.log(sitegroupupdate);
 					return connection.query(sitegroupupdate.join(''));
-				}).then(function(data) {
+				}).then((data) => {
 					console.log('finished updating');
 					connection.end();
+				}).catch((error) => {
+					if (connection && conection.end) connection.end();
+					console.log(error);
 				});
 				rl.close();
 			});
