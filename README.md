@@ -1,6 +1,6 @@
 ### DMS_LINKER_APP
 
-This is a Node app for linking a newly created WPT1 client with an already existing WPT2 client. 
+This is a Node app for linking a newly created WPT1 client with an already existing WPT2 client. This is something I often have to do at work and it's kind of tedious, so I figured I'd try making an app to do the work for me. :)
 
 It will ask a few questions getting the information it needs to make the updates and then run the queries and update statements.
 
