@@ -29,7 +29,7 @@ rl.question('What Database is this for? QA or PROD? (default is PROD) : ', (db) 
 					rl.question('What is the Site Group ID from WPT2? ', (sitegrID) => {
 						var connection;
 						if (twan === 'test') {
-							test = true;
+							var test = true;
 							twan = 'ACCORHOTELS';
 							tld = 'fr';
 							companyID = 109271;
